@@ -1,0 +1,54 @@
+{
+	"root": true,
+	"env": {
+		"browser": true,
+		"es6": true
+	},
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		}
+	},
+	"plugins": [
+		"standard",
+		"react"
+	],
+	"extends": [
+		"standard",
+		"plugin:react/recommended"
+	],
+	"rules": {
+		"array-bracket-spacing": [
+			"error",
+			"never"
+		],
+		"arrow-parens": [
+			"error",
+			"as-needed"
+		],
+		"comma-dangle": [
+			"error",
+			"always-multiline"
+		],
+		"indent": [
+			"error",
+			"tab"
+		],
+		"no-process-exit": "off",
+		"no-tabs": "off",
+		"object-curly-spacing": [
+			"error",
+			"never"
+		]
+	},
+	"overrides": [
+		{
+			"files": [
+				"*.test.js"
+			],
+			"env": {
+				"jest": true
+			}
+		}
+	]
+}
